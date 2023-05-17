@@ -1,10 +1,6 @@
 #include "Player.h"
 
-const int MAX_LEVEL = 10;
-const int DEFAULT_FORCE = 5;
-const int DEFAULT_MAX_HP = 100;
-
-Player::Player(const std::string& name, int maxHP = DEFAULT_MAX_HP, int force = DEFAULT_FORCE)
+Player::Player(const std::string& name, int maxHP, int force)
 {
     m_name = name;
     m_level = 1;
