@@ -58,6 +58,14 @@ public:
      */
     GameStatus getGameStatus() const;
 
+    /*
+     *  Updates the game status
+     *  If the player is knocked out updates to Loss
+     *  If the player is max leveled updates to Win
+     *  Otherwise, does nothing(stays at MidGame)
+     */
+    void updateGamestatus();
+
     ~Mtmchkin();
 
 private:
