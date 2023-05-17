@@ -4,9 +4,9 @@
 #include <string>
 #include "utilities.h"
 
-const int MAX_LEVEL = 10;
-const int DEFAULT_FORCE = 5;
-const int DEFAULT_MAX_HP = 100;
+constexpr int MAX_LEVEL = 10;
+constexpr int DEFAULT_FORCE = 5;
+constexpr int DEFAULT_MAX_HP = 100;
 
 class Player {
 public:

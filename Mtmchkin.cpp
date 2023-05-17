@@ -40,6 +40,16 @@ GameStatus Mtmchkin::getGameStatus() const
     return m_gameStatus;
 }
 
+void Mtmchkin::updateGamestatus()
+{
+    if(m_player.isKnockedOut()) {
+        m_gameStatus = GameStatus::Loss;
+    }
+    else if (MAX_LEVEL == m_player.getLevel()) {
+        m_gameStatus = GameStatus::Win;
+    }
+}
+
 Mtmchkin::~Mtmchkin()
 {
     delete[] m_cards;
