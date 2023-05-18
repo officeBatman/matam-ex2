@@ -18,13 +18,13 @@ void Card::applyEncounter(Player& player) const
                 player.addCoins(m_stats.loot);
             }
             else {
-                player.damage(m_stats.force);
+                player.damage(m_stats.hpLossOnDefeat);
             }
             printBattleResult(win);
             break;
         case CardType::Buff:
             if(player.pay(m_stats.cost)) {
-                player.buff(m_stats.force);
+                player.buff(m_stats.buff);
             }
             break;
         case CardType::Heal:
