@@ -28,6 +28,8 @@ void Mtmchkin::playNextCard()
 
     //prints the player info
     m_player.printInfo();
+
+    updateGamestatus();
 }
 
 bool Mtmchkin::isOver() const
